@@ -14,6 +14,6 @@ for file in listOfFiles :
         folders = os.path.join(path)
         ctime = os.stat(path).st_ctime
         print(ctime)
-        if ctime + 259.2 < time :
+        if ctime + 37339 < time :
             os.remove(path+'/'+file)
             shutil.rmtree(path+'/'+file)
